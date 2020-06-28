@@ -18,5 +18,5 @@ PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/full_santos10wifi.mk \
      $(LOCAL_DIR)/aosp_santos10wifi.mk
 
-PRODUCT_MAKEFILES += \
+PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/maru_santos10wifi.mk
