@@ -14,9 +14,17 @@
 # limitations under the License.
 #
 
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+
+# Inherit device configuration
 $(call inherit-product, device/samsung/santos10wifi/full_santos10wifi.mk)
 
-PRODUCT_NAME := aosp_santos10wifi
+PRODUCT_NAME := maru_santos10wifi
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := GT-P5210
 
-PRODUCT_PACKAGES += \
-    Launcher3
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=santos10wifixx \
+    BUILD_FINGERPRINT="samsung/santos10wifixx/santos10wifi:4.4.2/KOT49H/P5210XXUBOB1:user/release-keys" \
+    PRIVATE_BUILD_DESC="santos10wifixx-user 4.4.2 KOT49H P5210XXUBOB1 release-keys"
