@@ -16,3 +16,7 @@
 
 add_lunch_combo full_santos10wifi-userdebug
 add_lunch_combo aosp_santos10wifi-userdebug
+
+add_lunch_combo lineage_santos10wifi-userdebug
+add_lunch_combo lineage_santos10wifi-user
+add_lunch_combo lineage_santos10wifi-eng
